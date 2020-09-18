@@ -1,0 +1,17 @@
+type Login {
+    id: ID!
+    email: String
+    senha: String
+}
+
+input LoginInput {
+    id: ID
+    email: String
+    senha: String
+}
+
+extend type Query {
+    login(id:ID):Login
+    logins:[Login]!
+}
+
