@@ -26,7 +26,7 @@ public class ClienteService {
 
     @Transactional
     public Boolean deleteById(Long id) {
-        if (rep.findById(id).isPresent()) {
+        if (rep.findById(id).isPresent()) {bia
             rep.deleteById(id);
             return true;
         }
